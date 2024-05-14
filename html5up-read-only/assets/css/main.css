@@ -5,6 +5,14 @@
 	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Commenting encoding:
+	HEADER: main introduction with large font title and brief introduction
+	SIDE-BANNER: banner with portrait and easy access links to sections
+	SECTION-N: sections of home page for professional, personal, contact, etc.
+	PAGE-N: page corresponding to buttons mapped out in specific sections
+
+	Use ctrl+f and search for the sections for easy updates using all-caps!	
 */
 
 html, body, div, span, applet, object,
@@ -105,6 +113,7 @@ input, select, textarea {
 		line-height: 1.75em;
 	}
 
+	/* SIDE-BANNER: define button borders and hover color */
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -193,6 +202,7 @@ input, select, textarea {
 			margin: 3.375em 0;
 		}
 
+	/* SIDE-BANNER: Define text blurb below picture */
 	blockquote {
 		border-left: solid 8px #e4e4e4;
 		font-style: italic;
@@ -1753,6 +1763,7 @@ input, select, textarea {
 		}
 
 /* Section/Article */
+/* SECTION: Define section graphics */
 
 	section.special, article.special {
 		text-align: center;
@@ -1783,10 +1794,11 @@ input, select, textarea {
 		margin-top: -0.25em;
 		line-height: 1.5em;
 	}
-	/* Define header text color and size */
+	/* HEADER: define text color and size */
 		/* Original color */
 		/* color: #4a2a8f; */
-
+		/* Latest color */
+		/* color: #534376; */
 	header.major h2 {
 		color: #534376;
 		font-size: 3.5em;
@@ -1799,7 +1811,7 @@ input, select, textarea {
 		}
 
 /* Form */
-
+/* SECTION-CONTACT: Define "contact me" section options */
 	form {
 		margin: 0 0 2.25em 0;
 	}
@@ -2012,7 +2024,7 @@ input, select, textarea {
 		}
 
 /* Icon */
-
+/* Define available Icons, imported from the Font Awesome 5 Free pack */
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
@@ -2049,7 +2061,7 @@ input, select, textarea {
 		}
 
 /* Image */
-
+/* IMAGES: image styling options for quick formatting */
 	.image {
 		border-radius: 5px;
 		border: 0;
@@ -2188,14 +2200,15 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 			}
-
+		
+		/* IMAGE: avatar */
 		.image.avatar {
 			/* border-radius: 100%; */
 			overflow: hidden;
 		}
 
 			.image.avatar img {
-				/* border-radius: 100%; */
+				border-radius:20%;
 				display: block;
 				margin-left: 0px;
 				margin-right: 0px;
@@ -2213,7 +2226,7 @@ input, select, textarea {
 			}
 
 /* List */
-
+/* SIDE-BANNER: */
 	ol {
 		list-style: decimal;
 		margin: 0 0 2.25em 0;
@@ -2508,7 +2521,7 @@ input, select, textarea {
 				border-top: 0;
 			}
 
-/* Button */
+/* BUTTON */
 
 	input[type="submit"],
 	input[type="reset"],
@@ -2704,7 +2717,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		/* background color of side banner */
+		/* SIDE-BANNER: background color of side banner */
 		background: #55486f;
 		color: #fcfcfc;
 		height: 100%;
@@ -2731,7 +2744,7 @@ input, select, textarea {
 		#header a {
 			color: #ffffff;
 		}
-			/* Color for hovered over text */
+			/* SIDE-BANNER: color for hovered over text */
 			#header a:hover {
 				color: #a28cb9 !important;
 			}
@@ -2750,7 +2763,7 @@ input, select, textarea {
 				width: 8em;
 			}
 
-			/* Define top header blurb text style */
+			/* HEADER: Define top header blurb text style */
 			#header > header h1 {
 				font-size: 1.75em;
 				margin: 0;
@@ -2773,7 +2786,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			/* Define header app icons' style */
+			/* SIDE-BANNER: Define app icons' style */
 			#header > footer .icons {
 				margin: 0;
 			}
@@ -2789,7 +2802,7 @@ input, select, textarea {
 			flex-grow: 1;
 		}
 
-			/* Define header list style */
+			/* SIDE-BANNER: Define list style */
 			#header > nav ul {
 				list-style: none;
 				margin: 0;
@@ -2825,7 +2838,7 @@ input, select, textarea {
 					}
 
 /* Wrapper */
-/* Define section styling here */
+/* SECTION: Define section styling here */
 	#wrapper {
 		background: #ffffff;
 		padding-right: 23em;
@@ -2917,6 +2930,7 @@ input, select, textarea {
 
 	}
 
+/* Considerations for different screen sizes */
 /* Large */
 
 	@media screen and (max-width: 1280px) {
