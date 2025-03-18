@@ -87,8 +87,8 @@
 											<a href="#" class="image"><img src="../images/nb_work.jpg" alt="Running CV tests with on-board Jetson SBC"/></a>
 											<div class="inner">
 												<h4>Developing Control Solutions for Overactuated Mobile Manipulator</h4>
-												<p>The robotic platform shown here is the latest hardware aquisition of the CAVE Lab's Neutral Buoyancy Testbed. As demand for our lab increases, so does the workspace in which 
-													we need our robots to operate in. I am leading an effort to develop novel control algorithms to enable this mobile manipulator with its mounted mock-satellite to emulate multi-satellite
+												<p>The robotic platform shown here is the latest hardware aquisition of the CAVE Lab's Neutral Buoyancy Testbed. As demand for our lab increases, so does the size of the workspace in which 
+													we need our robots to operate in. I am leading an effort to develop novel control algorithms to enable these mobile manipulators with their mounted custom mock-satellites to emulate multi-vehicle
 													mission scenarios operating up to the 10 meter relative distance range.
 												</p>
 											</div>
@@ -133,16 +133,57 @@
               <section>
                 <div class="container">
                   <article>
-                  <h3>Resume</h3>
-                    <iframe
-                      class="Resume"
-                      src="../assets/EvanPaskoResume2025.pdf"
-                      width= "90%"
-                      height= "800px">
-                    </iframe> 
+                    <h3>Projects</h3>
+                    <p>Working in a controlled information environment doesn't allow me to share many details of my work, 
+                      but I am able to talk about some of the technologies I've been able to explore during my time at Aerospace.<br>
+                      The following material has been cleared for public release by the Aerospace Corporation.
+                    </p>
                   </article>
+                  <div class="features">
+                    <article>
+                    <a href="#" class="image"><img src="../images/fiducials.jpg" alt="ARUCO marker on our custom mock satellite design"/></a>
+                      <div class="inner">
+                        <h4>Fiducial Markers</h4>
+                        <p>Fiducial markers - similar to the QR codes you scan at restaurants - are excellent tools for pose estimation.
+                          They have gained popularity in the space industry for proximity operations due to their low size, weight, and power (SWaP),
+                          as well as their ease of use (all you have to do is slap it on the side of your spacecraft!). There are many different types 
+                          these markers for computer vision (e.g. ARUCO, AprilTag, STag), and in the CAVE we work on characterizing their performance
+                          in different lighting conditions, relative distances and angles. I also have done many demonstrations using them for closed-loop 
+                          tracking and rendezvous control with astrodynamics simulations governing relative satellite motion. 
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="features">
+                    <article>
+                      <a href="#" class="image"><img src="../images/mocksat.jpg" alt="Vicon Motion Capture markers on our satellites"/></a>
+											<div class="inner">
+												<h4>Vicon Motion Capture</h4>
+												<p>In the CAVE, we use motion capture systems to track our mock-satellites' pose as accurately as possible. These shiny
+                          spheres on the satellite are highly reflective in the infrared spectrum, which allow our system of Vicon cameras to 
+                          track them with sub-milimeter precision. This data allows us to validate and verify our controllers, path-planning algorithms, 
+                          pose-estimation models, etc. I work with Vicon every day in the lab, it is an integral part of our process. 
+												</p>
+											</div>
+                    </article>
+                  </div>
+                  <div class="features">
+                    <article>
+                      <a href="#" class="image"><img src="../images/basilisk_logo.png" alt="Vicon Motion Capture markers on our satellites"/></a>
+											<div class="inner">
+												<h4>Basilisk Astrodynamics Simulation</h4>
+												<p>The Basilisk Astrodynamics simulation (Courtesy of CU Boulder's AVSLab) is our primary simulation in the loop for emulating 6 degree of freedom satellite motion.
+                          We have leveraged this open source software with a ROS software bridge to enable direct communication between the simulation and 
+                          our robotics capabilities. Basilisk also has high fidelity payload models, its own visualization capabilities in Unity, and the 
+                          capability to easily integrate custom modules into their simulation framework. My teammates and I are constantly working with
+                          and adding to this code base. 
+												</p>
+											</div>
+                    </article>
+                  </div>
                 </div>
               </section>
+
             </div>
           </div>
   </body>
