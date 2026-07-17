@@ -60,7 +60,6 @@
 			var $nav_a = $nav.find('a');
 
 			$nav_a
-				.addClass('scrolly')
 				.on('click', function() {
 
 					var $this = $(this);
@@ -77,7 +76,16 @@
 							.addClass('active')
 							.addClass('active-locked');
 
-				})
+				});
+
+			$nav_a.filter(function() {
+
+				var href = $(this).attr('href');
+
+				return href && href.charAt(0) == '#';
+
+			})
+				.addClass('scrolly')
 				.each(function() {
 
 					var	$this = $(this),
